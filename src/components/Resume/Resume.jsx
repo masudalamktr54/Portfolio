@@ -7,7 +7,7 @@ import "aos/dist/aos.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHandPointRight } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-import mountainImg from "../../assets/mountainImage-1.png";
+import mountainImg from "../../assets/mountainImage-1.jpg";
 import mountainVideo from "../../assets/mountainVideo.mp4";
 
 function Resume() {

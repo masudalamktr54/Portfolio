@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import masudMainPic from "../../assets/masudPic-1.png";
 import masudSecondPic from "../../assets/masud2ndImg.png";
-import mountainImg from "../../assets/mountainImage-1.png";
+import mountainImg from "../../assets/mountainImage-1.jpg";
 import mountainVideo from "../../assets/mountainVideo.mp4";
 
 import {
