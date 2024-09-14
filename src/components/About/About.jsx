@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
+import masudSecondPic from "../../assets/masud2ndImg.png";
 
 function About() {
   // for AOS animation
@@ -24,7 +25,7 @@ function About() {
                 <div className=" absolute z-20 left-[85px] lg:left-[26px] -top-10 h-[221px] w-[151px] rounded-full overflow-hidden">
                   <img
                     className="h-[480px] w-[150px] object-cover object-center "
-                    src="./src/assets/masud2ndImg.png"
+                    src={masudSecondPic}
                     alt="About image"
                   />
                 </div>

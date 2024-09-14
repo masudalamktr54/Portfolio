@@ -7,6 +7,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import masudMainPic from "../../assets/masudPic-1.png";
+import masudSecondPic from "../../assets/masud2ndImg.png";
+import mountainImg from "../../assets/mountainImage-1.png";
+import mountainVideo from "../../assets/mountainVideo.mp4";
 
 import {
   faHandPointRight,
@@ -98,7 +102,6 @@ function Home() {
               </ReactTyped>
             </div>
 
-            {/* <FontAwesomeIcon icon={faInstagram} /> */}
             <div className=" space-x-8 my-6 px-2">
               <Link
                 className="py-2 px-8 rounded-full outline outline-2 outline-offset-2 bg-[#FFC107] hover:bg-[#FFA000] text-[#021542] hover:text-[#F0F0F0]"
@@ -119,7 +122,7 @@ function Home() {
           <div className="flex items-center justify-center mt-16 lg:mt-0">
             <img
               className="h-[380px] lg:h-[640px] opacity-80"
-              src="./src/assets/masudPic-1.png"
+              src={masudMainPic}
               alt="main image"
             />
           </div>
@@ -127,7 +130,6 @@ function Home() {
       </div>
 
       {/* About Page ============================================= */}
-
       <div id="about" className="font-normal mt-20">
         <section className="lg:flex lg:mx-32">
           <div className="text-gray-400">
@@ -144,7 +146,7 @@ function Home() {
                 <div className=" absolute z-20 left-[26px] -top-10 h-[221px] w-[151px] rounded-full overflow-hidden">
                   <img
                     className="  h-[480px] w-[150px] object-cover object-center "
-                    src="./src/assets/masud2ndImg.png"
+                    src={masudSecondPic}
                     alt="About image"
                   />
                 </div>
@@ -491,13 +493,13 @@ function Home() {
           <div data-aos="fade-up">
             <img
               className=" w-full h-[450px] rounded-xl lg:rounded-none object-cover object-center opacity-70"
-              src="./src/assets/mountainImage-1.jpg"
+              src={mountainImg}
               alt="Mountain Image"
             />
 
             {/* <video
               className=" w-full h-[450px] rounded-xl lg:rounded-none object-cover object-center opacity-70"
-              src="./src/assets/mountainVideo.mp4"
+              src={mountainVideo}
               alt="Mountain Video"
               autoPlay
               loop
