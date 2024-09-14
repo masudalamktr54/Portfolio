@@ -4,7 +4,7 @@ import App from "./App.jsx";
 import "./index.css";
 import {
   Route,
-  createBrowserRouter,
+  createHashRouter,
   createRoutesFromElements,
   RouterProvider,
 } from "react-router-dom";
@@ -15,7 +15,7 @@ import Contact from "./components/Contact/Contact.jsx";
 import Resume from "./components/Resume/Resume.jsx";
 import MessageMe from "./components/MessageMe/MessageMe.jsx";
 
-const router = createBrowserRouter(
+const router = createHashRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
       <Route index element={<Home />} />
