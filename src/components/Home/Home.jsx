@@ -1,5 +1,4 @@
 import React, { useRef, useState, useEffect } from "react";
-import Pdf from "../../assets/masudResume.pdf";
 import { animated, useSpring } from "@react-spring/web";
 import { ReactTyped } from "react-typed";
 import emailjs from "@emailjs/browser";
@@ -7,6 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import resume from "../../assets/masudResume.pdf";
 import masudMainPic from "../../assets/masudPic-1.png";
 import masudSecondPic from "../../assets/masud2ndImg.png";
 import mountainImg from "../../assets/mountainImage-1.jpg";
@@ -102,16 +102,16 @@ function Home() {
               </ReactTyped>
             </div>
 
-            <div className=" space-x-8 my-6 px-2">
+            <div className=" space-x-8 mt-10">
               <Link
-                className="py-2 px-8 rounded-full outline outline-2 outline-offset-2 bg-[#FFC107] hover:bg-[#FFA000] text-[#021542] hover:text-[#F0F0F0]"
+                className="py-2 lg:py-3 px-8 lg:px-10 rounded-full outline outline-2 outline-offset-2 bg-[#FFC107] hover:bg-[#FFA000] text-[#021542] hover:text-[#F0F0F0]"
                 to="https://github.com/masudalamktr54"
               >
                 Github
               </Link>
 
               <Link
-                className="py-2 px-8 rounded-full outline outline-2 outline-offset-2 hover:bg-[#FFA000]  text-[#F0F0F0] hover:text-[#021542]"
+                className="py-2 lg:py-3 px-8 lg:px-10 rounded-full outline outline-2 outline-offset-2 hover:bg-[#FFA000]  text-[#F0F0F0] hover:text-[#021542]"
                 to="https://www.linkedin.com/in/masud-alam-45a0211b6/"
               >
                 LinkdIn
@@ -160,48 +160,52 @@ function Home() {
               </div>
             </div>
 
-            <div data-aos="fade-up" className="space-y-6 mt-8 lg:mt-0 mx-3">
-              <p>Skills</p>
+            <div className="flex justify-center items-center">
+              <div data-aos="fade-up" className="space-y-6 mt-8 lg:mt-0">
+                <div>
+                  <p>Skills</p>
+                </div>
 
-              <div className="space-y-2">
-                <p>HTML</p>
-                <div className="w-[295px] lg:w-[450px] h-3 bg-gray-400 absolute"></div>
-                <div className="w-[285px] lg:w-[430px] h-3 bg-[#FFC107] bg-opacity-80 top-0 left-0 relative "></div>
-              </div>
-              <div className="space-y-2">
-                <p>CSS</p>
-                <div className="w-[295px] lg:w-[450px] h-3 bg-gray-400 absolute"></div>
-                <div className="w-[285px] lg:w-[430px] h-3 bg-[#FFC107] bg-opacity-80 top-0 left-0 relative "></div>
-              </div>
-              <div className="space-y-2">
-                <p>Tailwind CSS</p>
-                <div className="w-[295px] lg:w-[450px] h-3 bg-gray-400 absolute"></div>
-                <div className="w-[285px] lg:w-[430px] h-3 bg-[#FFC107] bg-opacity-80 top-0 left-0 relative "></div>
-              </div>
-              <div className="space-y-2">
-                <p>Javascript</p>
-                <div className="w-[295px] lg:w-[450px] h-3 bg-gray-400 absolute"></div>
-                <div className="w-[280px] lg:w-[420px] h-3 bg-[#FFC107] bg-opacity-80 top-0 left-0 relative "></div>
-              </div>
-              <div className="space-y-2">
-                <p>React</p>
-                <div className="w-[295px] lg:w-[450px] h-3 bg-gray-400 absolute"></div>
-                <div className="w-[275px] lg:w-[410px] h-3 bg-[#FFC107] bg-opacity-80 top-0 left-0 relative "></div>
-              </div>
-              <div className="space-y-2">
-                <p>MongoDB</p>
-                <div className="w-[295px] lg:w-[450px] h-3 bg-gray-400 absolute"></div>
-                <div className="w-[270px] lg:w-[390px] h-3 bg-[#FFC107] bg-opacity-80 top-0 left-0 relative "></div>
-              </div>
-              <div data-aos="fade-up" className="space-y-2">
-                <p>Git</p>
-                <div className="w-[295px] lg:w-[450px] h-3 bg-gray-400 absolute"></div>
-                <div className="w-[265px] lg:w-[380px] h-3 bg-[#FFC107] bg-opacity-80 top-0 left-0 relative "></div>
-              </div>
-              <div data-aos="fade-up" className="space-y-2">
-                <p>Figma</p>
-                <div className="w-[295px] lg:w-[450px] h-3 bg-gray-400 absolute"></div>
-                <div className="w-[260px] lg:w-[330px] h-3 bg-[#FFC107] bg-opacity-80 top-0 left-0 relative "></div>
+                <div className="space-y-2 ">
+                  <p>HTML</p>
+                  <div className="w-[295px] lg:w-[450px] h-3 bg-gray-400 absolute"></div>
+                  <div className="w-[285px] lg:w-[430px] h-3 bg-[#FFC107] bg-opacity-80 top-0 left-0 relative "></div>
+                </div>
+                <div className="space-y-2">
+                  <p>CSS</p>
+                  <div className="w-[295px] lg:w-[450px] h-3 bg-gray-400 absolute"></div>
+                  <div className="w-[285px] lg:w-[430px] h-3 bg-[#FFC107] bg-opacity-80 top-0 left-0 relative "></div>
+                </div>
+                <div className="space-y-2">
+                  <p>Tailwind CSS</p>
+                  <div className="w-[295px] lg:w-[450px] h-3 bg-gray-400 absolute"></div>
+                  <div className="w-[285px] lg:w-[430px] h-3 bg-[#FFC107] bg-opacity-80 top-0 left-0 relative "></div>
+                </div>
+                <div className="space-y-2">
+                  <p>Javascript</p>
+                  <div className="w-[295px] lg:w-[450px] h-3 bg-gray-400 absolute"></div>
+                  <div className="w-[280px] lg:w-[420px] h-3 bg-[#FFC107] bg-opacity-80 top-0 left-0 relative "></div>
+                </div>
+                <div className="space-y-2">
+                  <p>React</p>
+                  <div className="w-[295px] lg:w-[450px] h-3 bg-gray-400 absolute"></div>
+                  <div className="w-[275px] lg:w-[410px] h-3 bg-[#FFC107] bg-opacity-80 top-0 left-0 relative "></div>
+                </div>
+                <div className="space-y-2">
+                  <p>MongoDB</p>
+                  <div className="w-[295px] lg:w-[450px] h-3 bg-gray-400 absolute"></div>
+                  <div className="w-[270px] lg:w-[390px] h-3 bg-[#FFC107] bg-opacity-80 top-0 left-0 relative "></div>
+                </div>
+                <div data-aos="fade-up" className="space-y-2">
+                  <p>Git</p>
+                  <div className="w-[295px] lg:w-[450px] h-3 bg-gray-400 absolute"></div>
+                  <div className="w-[265px] lg:w-[380px] h-3 bg-[#FFC107] bg-opacity-80 top-0 left-0 relative "></div>
+                </div>
+                <div data-aos="fade-up" className="space-y-2">
+                  <p>Figma</p>
+                  <div className="w-[295px] lg:w-[450px] h-3 bg-gray-400 absolute"></div>
+                  <div className="w-[260px] lg:w-[330px] h-3 bg-[#FFC107] bg-opacity-80 top-0 left-0 relative "></div>
+                </div>
               </div>
             </div>
           </div>
@@ -455,13 +459,14 @@ function Home() {
         </div>
 
         <div data-aos="fade-up" className="flex justify-center mt-10">
-          <Link
-            to={Pdf}
+          <a
+            href={resume}
             target="_blank"
+            rel="noopener noreferrer"
             className="py-5 lg:py-6 px-10 uppercase font-medium text-xs tracking-[2px] rounded-full outline outline-2 outline-offset-2 bg-[#FFC107] hover:bg-[#FFA000] text-[#021542] hover:text-[#F0F0F0]"
           >
             Download CV
-          </Link>
+          </a>
         </div>
       </section>
 
@@ -586,18 +591,23 @@ function Home() {
           </div>
 
           <div data-aos="fade-up" className="flex flex-col items-center mt-24">
-            <Link to={Pdf} target="_blank">
+            <a href={resume} target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon
                 className="text-3xl text-[#FFC107] py-8 px-9  bg-[#021542] rounded-full"
                 icon={faCircleArrowDown}
               />
-            </Link>
-            <Link to={Pdf} target="_blank" className="text-xl uppercase my-4">
+            </a>
+            <a
+              href={resume}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xl uppercase my-4"
+            >
               Download Resume
-            </Link>
-            <Link to={Pdf} target="_blank">
+            </a>
+            <a href={resume} target="_blank" rel="noopener noreferrer">
               Resume Link
-            </Link>
+            </a>
           </div>
         </div>
       </section>

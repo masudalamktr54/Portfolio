@@ -1,12 +1,12 @@
 import React from "react";
 import { useEffect } from "react";
-import Pdf from "../../assets/masudResume.pdf";
 import { animated, useSpring } from "@react-spring/web";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHandPointRight } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import resume from "../../assets/masudResume.pdf";
 import mountainImg from "../../assets/mountainImage-1.jpg";
 import mountainVideo from "../../assets/mountainVideo.mp4";
 
@@ -175,13 +175,14 @@ function Resume() {
         </div>
 
         <div data-aos="fade-up" className="flex justify-center mt-10">
-          <Link
-            to={Pdf}
+          <a
+            href={resume}
             target="_blank"
+            rel="noopener noreferrer"
             className="py-5 lg:py-6 px-10 uppercase font-medium text-xs tracking-[2px] rounded-full outline outline-2 outline-offset-2 bg-[#FFC107] hover:bg-[#FFA000] text-[#021542] hover:text-[#F0F0F0]"
           >
             Download CV
-          </Link>
+          </a>
         </div>
       </section>
 

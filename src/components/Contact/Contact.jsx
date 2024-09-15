@@ -7,6 +7,7 @@ import {
   faEnvelope,
   faCircleArrowDown,
 } from "@fortawesome/free-solid-svg-icons";
+import resume from "../../assets/masudResume.pdf";
 
 function Contact() {
   return (
@@ -64,13 +65,24 @@ function Contact() {
             </address>
           </div>
 
-          <div className="flex flex-col items-center mt-24">
-            <FontAwesomeIcon
-              className="text-3xl text-[#FFC107] py-8 px-9  bg-[#021542] rounded-full"
-              icon={faCircleArrowDown}
-            />
-            <h3 className="text-xl uppercase my-5">Download Resume</h3>
-            <Link to={"#"}>Resume Link</Link>
+          <div data-aos="fade-up" className="flex flex-col items-center mt-24">
+            <a href={resume} target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon
+                className="text-3xl text-[#FFC107] py-8 px-9  bg-[#021542] rounded-full"
+                icon={faCircleArrowDown}
+              />
+            </a>
+            <a
+              href={resume}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xl uppercase my-4"
+            >
+              Download Resume
+            </a>
+            <a href={resume} target="_blank" rel="noopener noreferrer">
+              Resume Link
+            </a>
           </div>
         </div>
       </section>

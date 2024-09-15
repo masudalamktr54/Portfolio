@@ -22,7 +22,7 @@ function About() {
                   <div className="flex justify-center items-center p-20 bg-[#FFC107] rounded-full overflow-hidden"></div>
                 </div>
 
-                <div className=" absolute z-20 left-[85px] lg:left-[26px] -top-10 h-[221px] w-[151px] rounded-full overflow-hidden">
+                <div className=" absolute z-20 lg:left-[26px] -top-10 h-[221px] w-[151px] rounded-full overflow-hidden">
                   <img
                     className="h-[480px] w-[150px] object-cover object-center "
                     src={masudSecondPic}
@@ -39,48 +39,50 @@ function About() {
               </div>
             </div>
 
-            <div className="space-y-6 mt-8 lg:mt-0 mx-3">
-              <p>Skills</p>
+            <div className="flex justify-center items-center">
+              <div className="space-y-6 mt-8 lg:mt-0">
+                <p>Skills</p>
 
-              <div className="space-y-2">
-                <p>HTML</p>
-                <div className="w-[295px] lg:w-[450px] h-3 bg-gray-400 absolute"></div>
-                <div className="w-[285px] lg:w-[430px] h-3 bg-[#FFC107] bg-opacity-80 top-0 left-0 relative "></div>
-              </div>
-              <div className="space-y-2">
-                <p>CSS</p>
-                <div className="w-[295px] lg:w-[450px] h-3 bg-gray-400 absolute"></div>
-                <div className="w-[285px] lg:w-[430px] h-3 bg-[#FFC107] bg-opacity-80 top-0 left-0 relative "></div>
-              </div>
-              <div className="space-y-2">
-                <p>Tailwind CSS</p>
-                <div className="w-[295px] lg:w-[450px] h-3 bg-gray-400 absolute"></div>
-                <div className="w-[285px] lg:w-[430px] h-3 bg-[#FFC107] bg-opacity-80 top-0 left-0 relative "></div>
-              </div>
-              <div className="space-y-2">
-                <p>Javascript</p>
-                <div className="w-[295px] lg:w-[450px] h-3 bg-gray-400 absolute"></div>
-                <div className="w-[280px] lg:w-[420px] h-3 bg-[#FFC107] bg-opacity-80 top-0 left-0 relative "></div>
-              </div>
-              <div className="space-y-2">
-                <p>React</p>
-                <div className="w-[295px] lg:w-[450px] h-3 bg-gray-400 absolute"></div>
-                <div className="w-[275px] lg:w-[410px] h-3 bg-[#FFC107] bg-opacity-80 top-0 left-0 relative "></div>
-              </div>
-              <div className="space-y-2">
-                <p>MongoDB</p>
-                <div className="w-[295px] lg:w-[450px] h-3 bg-gray-400 absolute"></div>
-                <div className="w-[270px] lg:w-[390px] h-3 bg-[#FFC107] bg-opacity-80 top-0 left-0 relative "></div>
-              </div>
-              <div className="space-y-2">
-                <p>Git</p>
-                <div className="w-[295px] lg:w-[450px] h-3 bg-gray-400 absolute"></div>
-                <div className="w-[265px] lg:w-[380px] h-3 bg-[#FFC107] bg-opacity-80 top-0 left-0 relative "></div>
-              </div>
-              <div data-aos="fade-up" className="space-y-2">
-                <p>Figma</p>
-                <div className="w-[295px] lg:w-[450px] h-3 bg-gray-400 absolute"></div>
-                <div className="w-[260px] lg:w-[330px] h-3 bg-[#FFC107] bg-opacity-80 top-0 left-0 relative "></div>
+                <div className="space-y-2">
+                  <p>HTML</p>
+                  <div className="w-[295px] lg:w-[450px] h-3 bg-gray-400 absolute"></div>
+                  <div className="w-[285px] lg:w-[430px] h-3 bg-[#FFC107] bg-opacity-80 top-0 left-0 relative "></div>
+                </div>
+                <div className="space-y-2">
+                  <p>CSS</p>
+                  <div className="w-[295px] lg:w-[450px] h-3 bg-gray-400 absolute"></div>
+                  <div className="w-[285px] lg:w-[430px] h-3 bg-[#FFC107] bg-opacity-80 top-0 left-0 relative "></div>
+                </div>
+                <div className="space-y-2">
+                  <p>Tailwind CSS</p>
+                  <div className="w-[295px] lg:w-[450px] h-3 bg-gray-400 absolute"></div>
+                  <div className="w-[285px] lg:w-[430px] h-3 bg-[#FFC107] bg-opacity-80 top-0 left-0 relative "></div>
+                </div>
+                <div className="space-y-2">
+                  <p>Javascript</p>
+                  <div className="w-[295px] lg:w-[450px] h-3 bg-gray-400 absolute"></div>
+                  <div className="w-[280px] lg:w-[420px] h-3 bg-[#FFC107] bg-opacity-80 top-0 left-0 relative "></div>
+                </div>
+                <div className="space-y-2">
+                  <p>React</p>
+                  <div className="w-[295px] lg:w-[450px] h-3 bg-gray-400 absolute"></div>
+                  <div className="w-[275px] lg:w-[410px] h-3 bg-[#FFC107] bg-opacity-80 top-0 left-0 relative "></div>
+                </div>
+                <div className="space-y-2">
+                  <p>MongoDB</p>
+                  <div className="w-[295px] lg:w-[450px] h-3 bg-gray-400 absolute"></div>
+                  <div className="w-[270px] lg:w-[390px] h-3 bg-[#FFC107] bg-opacity-80 top-0 left-0 relative "></div>
+                </div>
+                <div className="space-y-2">
+                  <p>Git</p>
+                  <div className="w-[295px] lg:w-[450px] h-3 bg-gray-400 absolute"></div>
+                  <div className="w-[265px] lg:w-[380px] h-3 bg-[#FFC107] bg-opacity-80 top-0 left-0 relative "></div>
+                </div>
+                <div data-aos="fade-up" className="space-y-2">
+                  <p>Figma</p>
+                  <div className="w-[295px] lg:w-[450px] h-3 bg-gray-400 absolute"></div>
+                  <div className="w-[260px] lg:w-[330px] h-3 bg-[#FFC107] bg-opacity-80 top-0 left-0 relative "></div>
+                </div>
               </div>
             </div>
           </div>
